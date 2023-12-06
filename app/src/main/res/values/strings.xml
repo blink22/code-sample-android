@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Core -->
+    <string name="app_name">Top Kotlins</string>
+
+    <!-- Home -->
+    <string name="title_home">Home</string>
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_6dp"
+    app:cardCornerRadius="@dimen/corner_10dp"
+    app:cardElevation="@dimen/elevation_8dp"
+    tools:layout_gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRepoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="@color/grey_800"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivRepoLanguage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="NowInAndroid" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRepoLanguage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="@dimen/margin_4dp"
+            android:src="@drawable/code_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRepoName"
+            app:layout_constraintEnd_toStartOf="@id/tvRepoLanguage"
+            app:layout_constraintTop_toTopOf="@+id/tvRepoName"
+            app:tint="@color/grey_600" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRepoLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRepoLanguage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivRepoLanguage"
+            tools:text="Kotlin" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRepoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="3"
+            android:textColor="@color/grey_700"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRepoLanguage"
+            app:layout_constraintStart_toStartOf="@+id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoName"
+            tools:text="A fully functional Android app built entirely with Kotlin and Jetpack Compose" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRepoOwner"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:src="@drawable/ic_person_black_24dp"
+            app:layout_constraintStart_toStartOf="@+id/tvRepoDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvRepoDescription"
+            app:tint="@color/grey_600" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRepoOwner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_4dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/grey_600"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRepoOwner"
+            app:layout_constraintEnd_toStartOf="@+id/ivRepoStars"
+            app:layout_constraintStart_toEndOf="@+id/ivRepoOwner"
+            app:layout_constraintTop_toTopOf="@+id/ivRepoOwner"
+            tools:text="android" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRepoForks"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="@dimen/margin_4dp"
+            android:src="@drawable/git_fork"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRepoStars"
+            app:layout_constraintEnd_toStartOf="@+id/tvRepoForks"
+            app:layout_constraintTop_toTopOf="@+id/tvRepoStars"
+            app:tint="@color/grey_600" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRepoForks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_600"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRepoForks"
+            app:layout_constraintEnd_toEndOf="@+id/tvRepoDescription"
+            app:layout_constraintTop_toTopOf="@+id/ivRepoForks"
+            tools:text="10" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRepoStars"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="@dimen/margin_4dp"
+            android:src="@drawable/ic_star_border_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRepoOwner"
+            app:layout_constraintEnd_toStartOf="@+id/tvRepoStars"
+            app:layout_constraintTop_toTopOf="@+id/tvRepoOwner"
+            app:tint="@color/grey_600" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRepoStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:textColor="@color/grey_600"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRepoStars"
+            app:layout_constraintEnd_toStartOf="@+id/ivRepoForks"
+            app:layout_constraintTop_toTopOf="@+id/ivRepoStars"
+            tools:text="100" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
