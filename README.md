@@ -6,7 +6,34 @@ Top Kotlins is one-screen sample app that shows the top 10 Kotlin language repos
   <img width="270" height="600" src="/docs/images/Screenshot.png">
 </p>
 
-#### Checkout 👉 [Application Architecture](docs/ApplicationArchitecture.md) | [Code Conventions](docs/CodeConventions.md) | [Development and Release process](docs/DevelopmentReleaseProcess.md)
+# **Architecture Blueprint**
+more details for each layer check this 👉 [Application Architecture](docs/ApplicationArchitecture.md)
+
+<p align="center">
+  <img src="/docs/images/MVVM.png">
+</p>
+
+<p align="center">
+  <img src="/docs/images/CleanArchitecture.jpg">
+</p>
+
+# **Project Structure**
+
+<p align="center">
+  <img src="/docs/images/ProjectStructure.png">
+</p>
+
+# **Tools & Libraries**
+
+- retrofit
+- hilt
+- viewmodel
+- coroutines
+- livedata
+- constraintlayout
+- navigation
+
+#### Checkout 👉 [Code Conventions](docs/CodeConventions.md) | [Development and Release process](docs/DevelopmentReleaseProcess.md)
 
 # **General Notes**
 - Make sure to test your code (Don't depend on having a QA or PR reviewers to find the bugs)
