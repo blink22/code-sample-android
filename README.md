@@ -10,7 +10,7 @@ more details for each layer check this 👉 [Application Architecture](docs/Appl
 </p>
 
 <p align="center">
-  <img src="/docs/images/CleanArchitecture.jpg">
+  <img width="600" height="814" src="/docs/images/CleanArchitecture.png">
 </p>
 
 # **Project Structure**
