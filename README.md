@@ -2,10 +2,6 @@
 
 Top Kotlins is one-screen sample app that shows the top 10 Kotlin language repositories on Github using Github REST API with a tight focus on **MVVM** and **Clean architecture**.
 
-<p align="center">
-  <img width="270" height="600" src="/docs/images/Screenshot.png">
-</p>
-
 # **Architecture Blueprint**
 more details for each layer check this 👉 [Application Architecture](docs/ApplicationArchitecture.md)
 
